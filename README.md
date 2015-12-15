@@ -166,69 +166,57 @@
 # 2.20 BORRAR RAMA #
 ##  1. Crear un tag v0.2 ##
 
-###   >git  ###
+###   >git tag v0.2
 
 ##  2. Borrar la rama v0.2 ##
 
-###   >git  ###
+###   >git branch -d v0.2
 
 
 
 # 2.21 LISTADO DE CAMBIOS #
 ##  1. Listar los distintos commits con sus ramas y sus tags ##
 
-###   >git  ###
+###   >git log
 
 
 
 # 2.22 CUENTA DE GITHUB #
 ##  1. Poner una foto en vuestro perfil de GitHub ##
 
-###   >git  ###
-
 ##  2. Poner el doble factor de autentificación en vuestra cuenta de GitHub ##
 
-###   >git  ###
-
 ##  3. Añadir (si no lo habéis hecho ya) la clave pública que se corresponde a tu ordenador ##
-
-###   >git  ###
 
 
 
 # 2.23 USO SOCIAL DE GITHUB #
 ##  1. Preguntar los nombres de usuario de GitHub de tus compañeros de clase, búscalos, y sigueles ##
 
-###   >git  ###
-
 ##  2. Seguir los repositorios campusciff del resto de tus compañeros ##
 
-###   >git  ###
-
 ##  3. Añadir una estrella a los repositorios campusciff del resto de tus compañeros ##
-
-###   >git  ###
 
 
 
 # 2.24 CREAR UNA TABLA #
 ##  1. Crear una tabla en el fichero README.md con la información de varios de tus compañeros de clase ##
 
-###   >git  ###
+|   NOMBRE    | APELLIDO |               GITHUB               |
+| ----------- | -------- | ---------------------------------: |
+|  Alejandro  |  Diaz    |   https://github.com/adiazgalache  |
+|  Carlos     |  Paz     |   https://github.com/cpazsantos    |
+|  Amalia     |  Suárez  |   https://github.com/asuarezg      |
 
 
 
 # 2.25 COLABORADORES #
 ##  1. Poner a como colaborador del repositorio campusciff ##
 
-###   >git  ###
-
 
 
 # 2.26 CREAR UNA ORGANIZACIÓN #
 ##  1. Crear una organización llamada campuscifftunombredeusuariodegithub ##
-
-###   >git  ###
 
 
 
@@ -236,22 +224,9 @@
 ##  1. Crear 2 equipos en la organización campuscifftunombredeusuariodegithub, ##
 ##     uno llamado administradores con más permisos y otro colaboradores con menos permisos ##
 
-###   >git  ###
-
 ##  2. Meter a y a 2 de vuestros compañeros de clase en el equipo administradores ##
 
-###   >git  ###
-
 ##  3. Meter a y a otros 2 de vuestros compañeros de clase en el equipo colaboradores ##
-
-###   >git  ###
-
-
-
-# 2.28 CREAR UN INDEX.HTML #
-##  1. Crear un index.html que se pueda ver como página web en la organización ##
-
-###   >git  ###
 
 
 
