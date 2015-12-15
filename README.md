@@ -54,49 +54,53 @@
 
 
 
-# 2.8 AÑADIR FICHERO1.TXT #
+# 2.8 AÑADIR FICHERO 1.TXT #
 ## 1. Añadir fichero 1.txt al repositorio local ##
 
-###   >git  ###
+###   >echo 1 > 1.txt
 
 
 
 # 2.9 CREAR EL TAG V0.1 #
 ## 1. Crear un tag v0.1 ##
 
-###   >git  ###
+###   >git tag v0.1
 
 
 
 # 2.10 SUBIR EL TAG V0.1 #
 ## 1. Subir los cambios al repositorio remoto ##
 
-###   >git  ###
+###   >git add 1.txt
+###   >git commit -m "tag v0.1"
+###   >git push --tag origin master
 
 
 
 # 2.11 CREAR UNA RAMA V0.2 #
 ## 1. Crear una rama v0.2 ##
 
-###   >git  ###
+###   >git checkout -b v0.2
 
 ## 2. Posiciona tu carpeta de trabajo en esta rama ##
 
-###   >git  ###
+###   (Ya había posicionado la carpeta de trabajo en esa rama al mismo tiempo que la creé)
 
 
 
 # 2.12 AÑADIR FICHERO2.TXT #
 ## 1. Añadir un fichero2.txt en la rama v0.2 ##
 
-###   >git  ###
+###   >echo 2 > 2.txt
+###   >git add 2.txt
+###   >git commit -m "fichero 2.txt en v0.2"
 
 
 
 # 2.13 CREAR RAMA REMOTA V0.2 #
 ## 1. Subir los cambios al reposiorio remoto ##
 
-###   >git  ###
+###   >git push origin v0.2
 
 
 
