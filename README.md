@@ -8,176 +8,176 @@
 # 2.2 REPOSITORIO CAMPUSCIFF (II) #
 ## 1. Clonar vuestro repositorio en local ##
 
-###   >git clone git@github.com:danielgibaja/campusciff.git
+##### $git clone git@github.com:danielgibaja/campusciff.git
 
 
 
 # 2.3 README #
 ## 1. Crear (si no lo habéis creado ya) en vuestro repositorio local un documento README.md ##
 
-###   >git add README.md ###
+##### $git add README.md ###
 
 
 
 # 2.4 COMMIT INICIAL #
 ## 1. Añadir al README.md los comandos utilizados hasta ahora y hacer un commit inicial con el mensaje "commit inicial" ##
 
-###   >git commit README.md -m "commit inicial" ###
+##### $git commit README.md -m "commit inicial" ###
 
 
 
 # 2.5 PUSH INICIAL #
 ## 1. Subir los cambios al repositorio remoto ##
 
-###   >git push origin master ###
+##### $git push origin master ###
 
 
 
 # 2.6 IGNORAR ARCHIVOS (I) #
 ## 1. Crear en el repositorio local un fichero llamado privado.txt ##
 
-###   >touch privado.txt
+##### $touch privado.txt
 
 ## 2. Crear en el repositorio local una carpeta llamada privada ##
 
-###   >mkdir privada
+##### $mkdir privada
 
 
 
 # 2.7 IGNORAR ARCHIVOS (II) #
 ## 1. Realizar los cambios oportunos para que tanto el archivo como la carpeta sean ignorados por git ##
 
-###   >echo privado.txt > .gitignore
-###   >echo privada/ >> .gitignore
-###   >git add .
-###   >git commit -m "commit con archivos ignorados"
+##### $echo privado.txt > .gitignore
+##### $echo privada/ >> .gitignore
+##### $git add .
+##### $git commit -m "commit con archivos ignorados"
 
 
 
 # 2.8 AÑADIR FICHERO 1.TXT #
 ## 1. Añadir fichero 1.txt al repositorio local ##
 
-###   >echo 1 > 1.txt
+##### $echo 1 > 1.txt
 
 
 
 # 2.9 CREAR EL TAG V0.1 #
 ## 1. Crear un tag v0.1 ##
 
-###   >git tag v0.1
+##### $git tag v0.1
 
 
 
 # 2.10 SUBIR EL TAG V0.1 #
 ## 1. Subir los cambios al repositorio remoto ##
 
-###   >git add 1.txt
-###   >git commit -m "tag v0.1"
-###   >git push --tag origin master
+####  $git add 1.txt
+####  $git commit -m "tag v0.1"
+####  $git push --tag origin master
 
 
 
 # 2.11 CREAR UNA RAMA V0.2 #
 ## 1. Crear una rama v0.2 ##
 
-###   >git checkout -b v0.2
+####  $git checkout -b v0.2
 
 ## 2. Posiciona tu carpeta de trabajo en esta rama ##
 
-###   (Ya había posicionado la carpeta de trabajo en esa rama al mismo tiempo que la creé)
+####  (Ya había posicionado la carpeta de trabajo en esa rama al mismo tiempo que la creé)
 
 
 
 # 2.12 AÑADIR FICHERO2.TXT #
 ## 1. Añadir un fichero2.txt en la rama v0.2 ##
 
-###   >echo 2 > 2.txt
-###   >git add 2.txt
-###   >git commit -m "fichero 2.txt en v0.2"
+####  $echo 2 > 2.txt
+####  $git add 2.txt
+####  $git commit -m "fichero 2.txt en v0.2"
 
 
 
 # 2.13 CREAR RAMA REMOTA V0.2 #
 ## 1. Subir los cambios al reposiorio remoto ##
 
-###   >git push origin v0.2
+####  $git push origin v0.2
 
 
 
 # 2.14 MERGE DIRECTO #
 ##  1. Posicionarse en la rama master ##
 
-###   >git checkout master
+####  $git checkout master
 
 ##  2. Hacer un merge de la rama v0.2 en la rama master ##
 
-###   >git merge v0.2
+####  $git merge v0.2
 
 
 
 # 2.15 MERGE CON CONFLICTO (I) #
 ##  1. En la rama master poner Hola en el fichero1.txt y hacer commit ##
 
-###   >echo Hola >> 1.txt
-###   >git add .
-###   >git commit -m "Hola>>1.txt"
+####  $echo Hola >> 1.txt
+####  $git add .
+####  $git commit -m "Hola>>1.txt"
 
 
 
 # 2.16 MERGE CON CONFLICTO (II) #
 ##  1. Posicionarse en la rama v0.2 y poner Adios en el fichero "1.txt" y hacer commit ##
 
-###   >git checkout v0.2
-###   >echo Adios >> 1.txt
-###   >git add .
-###   >git commit -m "Adios>>1.txt"
+####  $git checkout v0.2
+####  $echo Adios >> 1.txt
+####  $git add .
+####  $git commit -m "Adios>>1.txt"
 
 
 
 # 2.17 MERGE CON CONFLICTO (III) #
 ##  1. Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2 ##
 
-###   >git checkout master
-###   >git merge v0.2 -m "merge con rama v0.2: conflicto"
-###   (No se puede: Automatic merge failed; fix conflicts and then commit the result)
+####  $git checkout master
+####  $git merge v0.2 -m "merge con rama v0.2: conflicto"
+####  (No se puede: Automatic merge failed; fix conflicts and then commit the result)
 
 
 
 # 2.18 LISTADO DE RAMAS #
 ##  1. Listar las ramas con merge y las ramas sin merge ##
 
-###   >git branch --merged
-###   (master)
-###   >git branch --no-merged
-###   (v0.2)
+####  $git branch --merged
+####  (master)
+####  $git branch --no-merged
+####  (v0.2)
 
 
 
 # 2.19 ARREGLAR CONFLICTO #
 ##  1. Arreglar el conflicto anterior y hacer un commit ##
 
-###   >echo 1 > 1.txt
-###   >echo Hola >> 1.txt
-###   >git add .
-###   >git commit -m "conflicto resuelto"
+####  $echo 1 > 1.txt
+####  $echo Hola >> 1.txt
+####  $git add .
+####  $git commit -m "conflicto resuelto"
 
 
 
 # 2.20 BORRAR RAMA #
 ##  1. Crear un tag v0.2 ##
 
-###   >git tag v0.2
+####  $git tag v0.2
 
 ##  2. Borrar la rama v0.2 ##
 
-###   >git branch -d v0.2
+####  $git branch -d v0.2
 
 
 
 # 2.21 LISTADO DE CAMBIOS #
 ##  1. Listar los distintos commits con sus ramas y sus tags ##
 
-###   >git log
+####  $git log
 
 
 
@@ -211,53 +211,19 @@
 
 
 # 2.25 COLABORADORES #
-##  1. Poner a como colaborador del repositorio campusciff ##
+##  1. Poner a github.com/asanzdiego como colaborador del repositorio campusciff ##
 
 
 
 # 2.26 CREAR UNA ORGANIZACIÓN #
-##  1. Crear una organización llamada campuscifftunombredeusuariodegithub ##
+##  1. Crear una organización llamada campusciffdanielgibaja ##
 
 
 
 # 2.27 CREAR EQUIPOS #
-##  1. Crear 2 equipos en la organización campuscifftunombredeusuariodegithub, ##
+##  1. Crear 2 equipos en la organización campusciffdanielgibaja, ##
 ##     uno llamado administradores con más permisos y otro colaboradores con menos permisos ##
 
 ##  2. Meter a y a 2 de vuestros compañeros de clase en el equipo administradores ##
 
 ##  3. Meter a y a otros 2 de vuestros compañeros de clase en el equipo colaboradores ##
-
-
-
-# 2.28 CREAR UN INDEX.HTML #
-##  1. Crear un index.html que se pueda ver como página web en la organización ##
-
-###   >git  ###
-
-
-
-# 2.29 CREAR PULL-REQUESTS #
-##  1. Hacer 2 forks de 2 repositorios campuscifftunombredeusuariodegithub.github.io ## 
-##     de 2 organizaciones de las que no seais ni administradiores ni colaboradores ##
-
-###   >git  ###
-
-##  2. Crearos una rama en cada fork ##
-
-###   >git  ###
-
-##  3. En cada rama modificar el fichero index.html añadiendo vuestro nombre ##
-
-###   >git  ###
-
-##  4. Con cada rama hacer un pull-request ##
-
-###   >git  ###
-
-
-
-# 2.30 GESTIONAR PULL-REQUESTS #
-##  1. Aceptar los pull-request que lleguen a los repositorios de tu organización ##
-
-###   >git  ###
