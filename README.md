@@ -118,7 +118,7 @@
 # 2.15 MERGE CON CONFLICTO (I) #
 ##  1. En la rama master poner Hola en el fichero1.txt y hacer commit ##
 
-###   >echo Hola>>1.txt
+###   >echo Hola >> 1.txt
 ###   >git add .
 ###   >git commit -m "Hola>>1.txt"
 
@@ -128,30 +128,38 @@
 ##  1. Posicionarse en la rama v0.2 y poner Adios en el fichero "1.txt" y hacer commit ##
 
 ###   >git checkout v0.2
+###   >echo Adios >> 1.txt
 ###   >git add .
-###   >echo Adios>>1.txt
 ###   >git commit -m "Adios>>1.txt"
 
 
 
 # 2.17 MERGE CON CONFLICTO (III) #
-##  1. Posicionarse de nuevo en la rama master y hacer un merge con la rama v0 ##
+##  1. Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2 ##
 
-###   >git  ###
+###   >git checkout master
+###   >git merge v0.2 -m "merge con rama v0.2: conflicto"
+###   (No se puede: Automatic merge failed; fix conflicts and then commit the result)
 
 
 
 # 2.18 LISTADO DE RAMAS #
 ##  1. Listar las ramas con merge y las ramas sin merge ##
 
-###   >git  ###
+###   >git branch --merged
+###   (master)
+###   >git branch --no-merged
+###   (v0.2)
 
 
 
 # 2.19 ARREGLAR CONFLICTO #
 ##  1. Arreglar el conflicto anterior y hacer un commit ##
 
-###   >git  ###
+###   >echo 1 > 1.txt
+###   >echo Hola >> 1.txt
+###   >git add .
+###   >git commit -m "conflicto resuelto"
 
 
 
