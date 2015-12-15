@@ -107,7 +107,7 @@
 # 2.14 MERGE DIRECTO #
 ##  1. Posicionarse en la rama master ##
 
-###   >git  ###
+###   >git checkout master
 
 ##  2. Hacer un merge de la rama v0.2 en la rama master ##
 
