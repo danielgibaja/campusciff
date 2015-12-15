@@ -127,7 +127,10 @@
 # 2.16 MERGE CON CONFLICTO (II) #
 ##  1. Posicionarse en la rama v0.2 y poner Adios en el fichero "1.txt" y hacer commit ##
 
-###   >git  ###
+###   >git checkout v0.2
+###   >git add .
+###   >echo Adios>>1.txt
+###   >git commit -m "Adios>>1.txt"
 
 
 
