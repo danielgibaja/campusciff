@@ -118,7 +118,9 @@
 # 2.15 MERGE CON CONFLICTO (I) #
 ##  1. En la rama master poner Hola en el fichero1.txt y hacer commit ##
 
-###   >git  ###
+###   >echo Hola>>1.txt
+###   >git add .
+###   >git commit -m "Hola>>1.txt"
 
 
 
